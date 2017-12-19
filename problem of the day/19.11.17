@@ -1,0 +1,26 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+  int a[10],i,n,k,j,index,temp,flag=0;
+   cin>>n>>k;
+  index=n;
+   for(i=0;i<n;i++)
+     cin>>a[i];
+   for(i=0;i<n;i++)
+   {
+     if((a[i]==k)&&(flag==0)){
+
+       index=i;flag=1;
+     else if((a[i]<k)&&(i>index)){
+       temp=a[i];
+          for(j=i-1;j>=index;j--)
+           a[j+1]=a[j];
+        a[index]=temp;
+        index++;
+   }
+  }
+
+  for(i=0;i<n;i++)
+   cout<<a[i]<<" ";
+  }
