@@ -1,5 +1,6 @@
 # Coding-Ninjas
-Contain set of programs in Coding Ninjas website
- 
-I use C++ for solving the problems
-It contain various collection programs.
+Contain solutions (program) for set of puzzles in Coding Ninjas website
+
+Language C++
+It really improves Problem solving skills.
+
