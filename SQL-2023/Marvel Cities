@@ -1,0 +1,2 @@
+//Marvel Cities 
+SELECT * FROM CITY WHERE Population>100000;
