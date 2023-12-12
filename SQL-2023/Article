@@ -1,0 +1,2 @@
+//Article 
+SELECT (viewer_id) id FROM Views WHERE author_id<> viewer_id GROUP BY viewer_id,view_date HAVING COUNT(1)>1 ORDER BY viewer_id;
