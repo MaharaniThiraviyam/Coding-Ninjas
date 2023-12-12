@@ -1,0 +1,2 @@
+//IMDb Metacritic Rating
+SELECT i.Title, i.rating FROM IMDB i, earning e WHERE i.title LIKE '%(2012)' AND i.movie_id=e.movie_id ANd i.MetaCritic>60 AND e.Domestic>100000000;
