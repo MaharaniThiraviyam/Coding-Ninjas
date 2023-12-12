@@ -1,0 +1,2 @@
+//Product's Worth Over Invoices 
+SELECT p.name, sum(i.rest) as rest, sum(i.paid) as paid, sum(i.canceled) as canceled, sum(i.refunded) as refunded FROM Product p, Invoice i WHERE p.product_id=i.product_id GROUP by p.name order by p.name;
